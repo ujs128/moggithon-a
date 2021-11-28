@@ -1,0 +1,86 @@
+h1{
+  color:red;
+}
+
+h2{
+  background-image: url(niconico_bg_blue.png);
+  line-height: 50px;
+  padding: 0 15px;
+  color: #fff;
+  text-align: center;
+}
+
+
+.headerInner{ 
+  height:100px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerInner,.mainInner{
+  max-width: 650px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+footer{
+  background-color: #eeeeee;
+}
+
+.footerInner{
+  text-align: center;
+  padding:30px;
+  margin-top:50px;
+}
+
+.keyVisual{
+  text-align: center;
+}
+
+.priceWrapper table,
+.priceWrapper th,
+.priceWrapper td{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.priceWrapper th,
+.priceWrapper td{
+    padding: 7px;
+}
+
+.priceWrapper table{
+    width: 100%;
+}
+
+.priceWrapper th{
+    width: 150px;
+    background: #eee;
+}
+
+img{
+  margin:auto;
+}
+
+.aboutWrapper img{
+  float:left;
+  margin-right:10px;
+}
+
+.contactButton{
+  width:150px;
+  height:30px;
+  display:inline-block;
+  background: #9b4dca;
+  color: #fff;
+  border-radius: 5px;
+  text-align:center;
+  text-decoration: none;
+  line-height:30px;
+  transition: 1s;
+}
+
+.contactButton:hover{
+  background:orange;
+}
