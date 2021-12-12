@@ -1,0 +1,398 @@
+/*大部分の初期設定*/
+*{
+  letter-spacing: .04em;
+  padding: 0;
+  color: #555555;
+}
+
+body{
+  position: relative;
+  margin: 0;
+}
+
+a{
+  width: 130px;
+  text-align: center;
+  position: relative;
+  display: block;
+  height: 100px;
+  padding-top: 30px;
+  font-family: 'Mochiy Pop One', sans-serif;
+}
+
+a:hover{
+  top: -3px;
+}
+
+/*魚の写真を上下に動かす*/
+.sakana{
+  animation-name: updown;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1.5s;
+}
+
+#sakana1{
+  position: absolute;
+  top: 160px;
+  left: 1230px;
+  width: 200px;
+  height: 200px;
+}
+#sakana2{
+  position: absolute;
+  top: 180px;
+  left: 1130px;
+  width: 100px;
+  height: 100px;
+}
+#sakana3{
+  position: absolute;
+  top: 580px;
+  left: 20px;
+  width: 200px;
+  height: 200px;
+}
+#sakana4{
+  position: absolute;
+  top: 2350px;
+  left: 20px;
+  width: 200px;
+  height: 200px;
+  z-index: 2;
+}
+#mark{
+  position: absolute;
+  top: 2930px;
+  left: 1050px;
+  width: 150px;
+  height: 150px;
+}
+
+/*文字を縦表記にする*/
+.toptext{
+  writing-mode: vertical-rl;
+  background-color: rgba(255,255,255,0.8);
+  font-family: 'Mochiy Pop One', sans-serif;
+  font-size: 40px;
+  padding: 10px 0;
+  color: #005ebb;
+}
+
+.part1{
+  position: absolute;
+  top: 330px;
+  left: 1150px;
+}
+.part2{
+  position: absolute;
+  top: 380px;
+  left: 1050px;
+}
+.part3{
+  position: absolute;
+  top: 410px;
+  left: 950px;
+}
+
+/*ヘッダーとグローバルナビゲーションバー*/
+header{
+  width: 100%;
+}
+
+.wrap{
+  position: relative;
+}
+
+.nav-items{
+  margin: 0;
+  text-align: center;
+  padding-top: 30px;
+}
+
+nav ul{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  height: 130px;
+}
+nav ul li{
+  float: left;
+  height: 130px;
+}
+nav ul li+ li {
+  border-left: 1px dotted #333;
+}
+
+.nav-in img{
+  position: absolute;
+  display: block;
+  top: 30;
+	left: 50%;
+	transform: translateX(-50%);
+  width: 40px;
+}
+
+#svg-bg {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+a p{
+  position: absolute;
+  text-align: center;
+  display: block;
+  bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+  width: 100%;
+}
+
+.logo{
+  padding: 0 15px 0 30px;
+}
+
+/*メイン部分の写真の設定*/
+.keyVisual{
+  height: 650px;
+}
+.keyVisual img {
+  position: absolute;
+  width: 100%;
+  height: 690px;
+  z-index: -2;
+  top: 120px;
+  left: 0;
+}
+
+/*メイン部分の大まかな設定*/
+.mainInner{
+  margin: auto;
+}
+
+.aboutWrapper{
+  max-width: 1000px;
+  margin: auto;
+  padding: 75px 0 75px 0;
+  text-align: center;
+}
+.aboutWrapper img{
+  display: block;
+  margin: auto;
+}
+.aboutWrapper p{
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+h2{
+  line-height: 50px;
+  padding: 0 15px;
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+  font-family: 'Mochiy Pop One', sans-serif;
+  background:linear-gradient(transparent 60%, #ff6 60%);
+  display: inline;
+}
+
+#area-2, #area-4{
+  background-color: #f4ffff;
+}
+
+.clearfix:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*エリア1個目の設定*/
+.fishes{
+  display: flex;
+  padding-top: 20px;
+}
+.fish {
+  position: relative;
+  width: calc(100% / 3);
+  padding: 10px 10px;
+  text-align: center;
+}
+.fish img{  
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+.fish p{
+  position: absolute;
+  top: 210px;
+  left: 20px;
+  width: 110px;
+  font-size: 17px;
+  font-family: 'Mochiy Pop One', sans-serif;
+  color: white;
+}
+
+.f1{
+  background-color: rgba(246, 118, 144, 1);
+}
+.f2{
+  background-color: rgba(132, 144, 200, 1);
+}
+.f3{
+  background-color: rgba(159, 202, 153, 1);
+}
+
+/*エリア2個目の設定*/
+#area-2 .aboutWrapper{
+  position: relative;
+}
+
+.pic2{
+  padding-top: 20px;
+}
+
+.vr{
+  position: absolute;
+  top: 170px;
+  left: 800px;
+  animation-name: updown;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1.5s;
+}
+
+/*エリア3個目の設定*/
+#area-3 .aboutWrapper{
+  position: relative;
+}
+
+.showes{
+  display: flex;
+  padding-top: 20px;
+}
+.show {
+  width: calc(100% / 2);
+  padding: 10px 10px;
+  text-align: center;
+}
+.show img{  
+  width: 450px;
+  height: 300px;
+}
+
+.perfect-circle {
+  position: absolute;
+  top: 295px;
+  left: 375px;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	background: rgba(0, 170, 255, 0.7);
+}
+.perfect-circle h3{
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  padding-top: 60px;
+}
+.priceWrapper p{
+  margin-bottom: 50px;
+}
+
+/*エリア4個目の設定*/
+.price_card{
+  width: 300px;
+  background: rgb(255, 255, 255);
+  display: inline-table;
+  top: 0;
+  height: 400px;
+  box-shadow:
+    0 1.9px 2.5px rgba(0, 0, 0, 0.057),
+    0 5px 6.1px rgba(0, 0, 0, 0.076),
+    0 10.1px 11.4px rgba(0, 0, 0, 0.086),
+    0 19.2px 19.8px rgba(0, 0, 0, 0.092),
+    0 38.4px 34.8px rgba(0, 0, 0, 0.1),
+    0 101px 74px rgba(0, 0, 0, 0.13);
+}
+.price_card:not(:last-child){
+  margin-right: 80px;
+}
+.price_card p{
+  margin-top: 90px;
+  font-size: 30px;
+}
+
+span{
+  color: white;
+  font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.red .pricebox{
+  background: rgb(246, 77, 77);
+}
+.green .pricebox{
+  background: rgb(48, 219, 181);
+}
+
+.japanese{
+  width: 100%;
+  font-size: 50px;
+  font-weight: 300;
+  display: block;
+  text-align: center;
+  padding: 30px 0 10px;
+}
+.english{
+  width: 100%;
+  font-size: 25px;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  padding: 0 0 30px;
+}
+
+/*エリア5個目の設定*/
+.attentions{
+  display: flex;
+  padding-top: 10px;
+}
+.attention{
+  width: calc(100% / 3);
+  padding: 20px 10px;
+  text-align: center;
+}
+.attention img{
+  width: 150px;
+  height: 150px;
+}
+
+
+/*フッターの設定*/
+footer{
+  background: #eee;
+}
+
+.footerInner{
+  bottom: 0;
+  text-align: center;
+  padding: 30px;
+}
+
+
+@keyframes updown {
+  0% {
+      transform: translate(0,0px);
+  }
+
+  100% {
+      transform: translate(0,-15px)
+  }
+}
